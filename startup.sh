@@ -8,4 +8,4 @@
 #chmod 777 /dev/net/tun
 cd /etc/openvpn/
 openvpn --config client.ovpn --daemon .
-#dotnet /app/webapp.dll
+dotnet /app/webapp.dll
