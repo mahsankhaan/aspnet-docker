@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore:1.1.1
+FROM mcr.microsoft.com/dotnet/sdk
  
 RUN apt-get update \
  && apt-get install -y openvpn \
