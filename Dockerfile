@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk
+FROM default-route-openshift-image-registry.apps-crc.testing/openvpn/aspnet:latest
  
 RUN apt-get update \
  && apt-get install -y openvpn \
