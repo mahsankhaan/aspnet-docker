@@ -375,6 +375,6 @@ else
     [[ -e $cert ]] || grep -Eq '^ *(<ca>|ca +)' $conf ||
         { echo "ERROR: VPN CA cert missing!"; sleep 120; }
     set -x
-    sudo exec sg vpn -c "openvpn --cd $dir --config $conf $ext_args \
+     exec sg vpn -c "openvpn --cd $dir --config $conf $ext_args \
                ${OTHER_ARGS:-} ${MSS:+--fragment $MSS --mssfix}"
 fi
