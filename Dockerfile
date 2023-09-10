@@ -9,6 +9,7 @@ RUN apk --no-cache --no-progress upgrade && \
     rm -rf /tmp/*
 
 COPY openvpn.sh /usr/bin/
+RUN chmod 755 /usr/bin/openvpn.sh
 
 HEALTHCHECK --interval=60s --timeout=15s --start-period=120s \
              CMD curl -LSs 'https://api.ipify.org'
