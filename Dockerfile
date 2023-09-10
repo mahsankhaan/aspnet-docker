@@ -7,7 +7,7 @@ RUN apk --no-cache --no-progress upgrade && \
                  tini tzdata && \
     addgroup -S vpn && \
     rm -rf /tmp/* && \
-    apk add shadow  && sg root -c id
+    apk add shadow
 
 
 COPY openvpn.sh /usr/bin/
