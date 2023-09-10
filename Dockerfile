@@ -5,7 +5,6 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/*
  
 COPY ./vpn /etc/openvpn
-RUN chmod 777 /etc/openvpn
  
 WORKDIR /app
 COPY ./ .
